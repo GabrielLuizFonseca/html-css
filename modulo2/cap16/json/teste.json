@@ -1,0 +1,12 @@
+[
+    {
+    "nome": "Gabriel",
+    "idade": 30,
+    "esta trabalhando": true,
+    "detalhes_profissao":{
+        "profissao": "Separador",
+        "empresa": "Toscana"
+    },
+    "hobbies": [ "Programar", "correr", "ler"]
+    }
+]

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        div#area{
+            background: green;
+            width: 200px;
+            height: 200px;
+            font: 15pt arial normal;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">Menu</div>
+    <script>
+        var a = window.document.getElementById('area')
+        addEventListener('click',clicar)
+
+        addEventListener('mouseover', entra)
+
+        addEventListener('mouseout', saiu)
+        
+
+        function clicar(){
+            a.innerText = 'Clicou!'
+            a.style.backgroundColor='red'
+        }
+
+        function entra(){
+            a.innerText = 'Interaja...'
+        }
+        
+        function saiu(){
+            a.innerText = 'Saiu. T_T'
+            a.style.backgroundColor = 'green'
+        }
+
+
+    </script>
+</body>
+</html>

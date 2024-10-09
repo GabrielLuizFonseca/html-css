@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores em Css</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Representação por nomes -->
+    <h2 style="background-color: blue; color: white;">Exemplo de Cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repudiandae commodi at illum provident! Sequi sint tenetur ex ab, commodi repudiandae, eius dolores voluptates magni saepe animi, natus quae fuga.</p>
+
+    <!--Representação por codigos hexadecimais-->
+    <!--Decimal: 0 1 2 3 4 5 6 7 8 9-->
+    <!--Hexadecimal: 0 1 2 3 4 5 6 7 8 9 a b c d e f-->
+    <h2 style="background-color: #0000ff; color: #fff;">Exemplo de Cores</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repudiandae commodi at illum provident! Sequi sint tenetur ex ab, commodi repudiandae, eius dolores voluptates magni saepe animi, natus quae fuga.</p>
+
+    <!--RGB, red, green, blue-->
+    <h2 style="background-color: rgb(0, 0, 250); color: rgb(250, 250, 250);">Exemplo de Cores</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repudiandae commodi at illum provident! Sequi sint tenetur ex ab, commodi repudiandae, eius dolores voluptates magni saepe animi, natus quae fuga.</p>
+
+    <!--Hsl, Hue, Saturation, Lightness-->
+    <h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);">Exemplo de Cores</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iure amet voluptas nisi voluptate, minima sint harum ipsam sit consequuntur id fugit pariatur? Pariatur amet impedit excepturi dolores, nemo dolorem?</p>
+
+    <h2 style="background-color: rgba(0, 0, 250, 0.253); color: rgb(3, 88, 18);">Exemplo de Cores</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente aliquam earum deserunt omnis sequi unde repellat tempora eius. Eveniet ex praesentium sapiente at asperiores atque vitae doloribus animi dignissimos repudiandae?</p>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[2]
+        p1.style.color= 'blue'
+        p1.innerHTML='Eu estou usando oo <strong>DOM</strong>'
+
+    </script>
+
+</body>
+</html>
