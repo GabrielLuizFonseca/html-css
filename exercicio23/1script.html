@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" autocomplete="on" method="get">
+        <p>
+            <label for="qan">Que ano você nasceu? </label>
+            <input type="number" name="qan" id="qan" min="1930" max="2025" required oninput="calid()">
+        </p>
+        
+        <p>
+            <label for="idan">Sua idade: </label>
+            <output name="idan" id="idan"></output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function calid() {
+           let atual = new Date().getFullYear()
+            idan.innerHTML = Number(atual) - Number(qan.value)
+        }
+    </script>
+</body>
+</html>
