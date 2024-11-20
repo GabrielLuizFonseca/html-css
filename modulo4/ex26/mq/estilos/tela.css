@@ -29,3 +29,14 @@ menu li{
     display: inline-block;
     padding: 10px;
 }
+    menu li:hover{
+        background-color: rgb(39, 39, 39);
+        color: rgba(255, 255, 0, 0.692);
+        cursor: pointer;
+    }
+
+article{
+    width: 600px;
+    display: block;
+    margin: auto;
+}
