@@ -9,6 +9,9 @@
             background-color: lightgray;
             display: flex;
             flex-flow: row wrap;
+            height: 400px;
+
+            align-items: flex-start;
         }
         .item{
             background-color: lightblue;
@@ -16,29 +19,32 @@
             border: 1px solid black;
             padding: 20px;
         }
+        div#li0{
+            align-self: flex-end; 
+        }
         div#li{
-            order: 1;
+            align-self: ; 
         }
         div#li2{
-            order: 2;
+            align-self: auto;
         }
         div#li3{
-            order: 6;
+            align-self: center;
         }
         div#li4{
-            order: 5;
+            align-self: flex-start;
         }
         div#li5{
-            order: 7;
+            align-self: ;
         }
         div#li6{
-            order: -1;
+            align-self: stretch;
         }
     </style>
 </head>
 <body>
     <div id="container">
-        <div class="item" style="order: 3;">A</div>
+        <div class="item" id="li0">A</div>
         <div class="item" id="li">B</div>
         <div class="item" id="li2">C</div>
         <div class="item" id="li3">D</div>
