@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        #container{
+            background-color: lightgray;
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+        .item{
+            background-color: lightblue;
+            text-align: center;
+            border: 1px solid black;
+            padding: 20px;
+            flex-basis: 150px;/*ou auto*/
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item" id="li0">A</div>
+        <div class="item" id="li">Essa linha e media</div>
+        <div class="item" id="li2">C</div>
+        <div class="item" id="li3">D</div>
+        <div class="item" id="li4">Essa linha ela e maior ainda que a outra</div>
+        <div class="item" id="li5">F</div>
+        <div class="item" id="li6">Pequena</div>
+    </div>
+    
+</body>
+</html>
