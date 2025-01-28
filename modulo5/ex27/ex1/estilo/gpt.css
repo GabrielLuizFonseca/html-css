@@ -1,0 +1,68 @@
+/* Estilo básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+.items-container {
+    display: flex;
+    gap: 15px;
+}
+
+/* Estilo do menu hambúrguer */
+.brg {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.items {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.items:hover {
+    background-color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .brg {
+        display: block;
+    }
+
+    .items-container {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .items {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .items-container.show {
+        display: flex;
+    }
+}
