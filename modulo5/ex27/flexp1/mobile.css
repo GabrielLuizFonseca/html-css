@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+header, header > nav{
+    flex-flow: column wrap;
+}
+header > h1{
+    flex-basis: 50px;
+}
+header > nav > a{
+    width: 90vw;
+}
