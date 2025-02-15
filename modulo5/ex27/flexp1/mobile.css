@@ -4,8 +4,13 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
 }
+#menu {
+    
+    /*flex-flow: column wrap;*/
+}
 
-header, header > nav{
+header{
+    
     flex-flow: column wrap;
 }
 header > h1{
@@ -14,3 +19,9 @@ header > h1{
 header > nav > a{
     width: 90vw;
 }
+/*#hamburguer{
+    display: block;
+}
+#menu #show{
+    display: block;
+}*/

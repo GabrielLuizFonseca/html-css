@@ -28,6 +28,11 @@ header > h1{
     /*border: 1px dotted black;*/
     flex: 0 0 200px;
 }
+#hamburguer{
+    display: none;
+    cursor: pointer;
+}
+
 header nav{
     /*border: 1px dotted black;*/
 
